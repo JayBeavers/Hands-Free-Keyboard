@@ -1,0 +1,3 @@
+[submodule "lib/GazePointer"]
+	path = lib/GazePointer
+	url = https://github.com/MSREnable/GazePointer

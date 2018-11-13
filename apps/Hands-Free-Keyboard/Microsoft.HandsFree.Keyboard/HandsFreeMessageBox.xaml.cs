@@ -1,4 +1,4 @@
-using Microsoft.HandsFree.Mouse;
+using Microsoft.HandsFree.GazePointer;
 using Microsoft.HandsFree.Settings;
 using System.Windows;
 using Microsoft.HandsFree.Keyboard.Settings;
@@ -10,7 +10,7 @@ namespace Microsoft.HandsFree.Keyboard
     /// </summary>
     public partial class HandsFreeMessageBox : Window
     {
-        GazeMouse _mouse;
+        GazePointer.GazePointer _mouse;
 
         public HandsFreeMessageBox()
         {
@@ -19,7 +19,7 @@ namespace Microsoft.HandsFree.Keyboard
             Loaded += (s, e) =>
                 {
                     TheTextBlock.Text = Message;
-                    _mouse = GazeMouse.Attach(this, null, null, AppSettings.Instance.Mouse);
+                    _mouse = GazePointer.GazePointer.Attach(this);
                 };
         }
 

@@ -1,6 +1,6 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2003
 MinimumVisualStudioVersion = 14.0.23023.0
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.HandsFree.Keyboard", "Microsoft.HandsFree.Keyboard\Microsoft.HandsFree.Keyboard.csproj", "{88970B0B-9B03-4182-A462-274BEAC7C0B8}"
 EndProject
@@ -58,6 +58,20 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.HandsFree.Keyboard.Model.Test", "Microsoft.HandsFree.Keyboard.Model.Test\Microsoft.HandsFree.Keyboard.Model.Test.csproj", "{CD9CB14A-D17A-4932-BBF7-4D880BF4C144}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.HandsFree.Helpers", "..\..\lib\Microsoft.HandsFree.Helpers\Microsoft.HandsFree.Helpers.csproj", "{1A916246-705D-4192-B396-8165A96319AC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GazePointer", "GazePointer", "{DC385C4F-63ED-4F3E-A6E9-662A03EB835D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.HandsFree.GazePointer", "..\..\lib\GazePointer\lib\Microsoft.HandsFree.GazePointer\Microsoft.HandsFree.GazePointer.csproj", "{128A0A18-7FC1-4DB5-BBEC-2174C4C765EB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.HandsFree.MVVM", "..\..\lib\GazePointer\lib\Microsoft.HandsFree.MVVM\Microsoft.HandsFree.MVVM.csproj", "{3D58B016-B156-4401-8785-4E0182655EDE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.HandsFree.Settings", "..\..\lib\GazePointer\lib\Microsoft.HandsFree.Settings\Microsoft.HandsFree.Settings.csproj", "{C738745B-1AF0-4D65-BEA7-082FB61864EC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.HandsFree.Filters", "..\..\lib\GazePointer\lib\Microsoft.HandsFree.Filters\Microsoft.HandsFree.Filters.csproj", "{1DC5A095-18E8-4022-B0EC-6C5311BA5AE5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.HandsFree.Sensors", "..\..\lib\GazePointer\lib\Microsoft.HandsFree.Sensors\Microsoft.HandsFree.Sensors.csproj", "{48E96990-1267-477A-8AD3-E4972F3C8945}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.HandsFree.Win32", "..\..\lib\GazePointer\lib\Microsoft.HandsFree.Win32\Microsoft.HandsFree.Win32.csproj", "{0E8C0348-E61B-4209-9D2F-C57E87910675}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -169,8 +183,43 @@ Global
 		{1A916246-705D-4192-B396-8165A96319AC}.Debug|x64.Build.0 = Debug|x64
 		{1A916246-705D-4192-B396-8165A96319AC}.Release|x64.ActiveCfg = Release|x64
 		{1A916246-705D-4192-B396-8165A96319AC}.Release|x64.Build.0 = Release|x64
+		{128A0A18-7FC1-4DB5-BBEC-2174C4C765EB}.Debug|x64.ActiveCfg = Debug|x64
+		{128A0A18-7FC1-4DB5-BBEC-2174C4C765EB}.Debug|x64.Build.0 = Debug|x64
+		{128A0A18-7FC1-4DB5-BBEC-2174C4C765EB}.Release|x64.ActiveCfg = Release|x64
+		{128A0A18-7FC1-4DB5-BBEC-2174C4C765EB}.Release|x64.Build.0 = Release|x64
+		{3D58B016-B156-4401-8785-4E0182655EDE}.Debug|x64.ActiveCfg = Debug|x64
+		{3D58B016-B156-4401-8785-4E0182655EDE}.Debug|x64.Build.0 = Debug|x64
+		{3D58B016-B156-4401-8785-4E0182655EDE}.Release|x64.ActiveCfg = Release|x64
+		{3D58B016-B156-4401-8785-4E0182655EDE}.Release|x64.Build.0 = Release|x64
+		{C738745B-1AF0-4D65-BEA7-082FB61864EC}.Debug|x64.ActiveCfg = Debug|x64
+		{C738745B-1AF0-4D65-BEA7-082FB61864EC}.Debug|x64.Build.0 = Debug|x64
+		{C738745B-1AF0-4D65-BEA7-082FB61864EC}.Release|x64.ActiveCfg = Release|x64
+		{C738745B-1AF0-4D65-BEA7-082FB61864EC}.Release|x64.Build.0 = Release|x64
+		{1DC5A095-18E8-4022-B0EC-6C5311BA5AE5}.Debug|x64.ActiveCfg = Debug|x64
+		{1DC5A095-18E8-4022-B0EC-6C5311BA5AE5}.Debug|x64.Build.0 = Debug|x64
+		{1DC5A095-18E8-4022-B0EC-6C5311BA5AE5}.Release|x64.ActiveCfg = Release|x64
+		{1DC5A095-18E8-4022-B0EC-6C5311BA5AE5}.Release|x64.Build.0 = Release|x64
+		{48E96990-1267-477A-8AD3-E4972F3C8945}.Debug|x64.ActiveCfg = Debug|x64
+		{48E96990-1267-477A-8AD3-E4972F3C8945}.Debug|x64.Build.0 = Debug|x64
+		{48E96990-1267-477A-8AD3-E4972F3C8945}.Release|x64.ActiveCfg = Release|x64
+		{48E96990-1267-477A-8AD3-E4972F3C8945}.Release|x64.Build.0 = Release|x64
+		{0E8C0348-E61B-4209-9D2F-C57E87910675}.Debug|x64.ActiveCfg = Debug|x64
+		{0E8C0348-E61B-4209-9D2F-C57E87910675}.Debug|x64.Build.0 = Debug|x64
+		{0E8C0348-E61B-4209-9D2F-C57E87910675}.Release|x64.ActiveCfg = Release|x64
+		{0E8C0348-E61B-4209-9D2F-C57E87910675}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{128A0A18-7FC1-4DB5-BBEC-2174C4C765EB} = {DC385C4F-63ED-4F3E-A6E9-662A03EB835D}
+		{3D58B016-B156-4401-8785-4E0182655EDE} = {DC385C4F-63ED-4F3E-A6E9-662A03EB835D}
+		{C738745B-1AF0-4D65-BEA7-082FB61864EC} = {DC385C4F-63ED-4F3E-A6E9-662A03EB835D}
+		{1DC5A095-18E8-4022-B0EC-6C5311BA5AE5} = {DC385C4F-63ED-4F3E-A6E9-662A03EB835D}
+		{48E96990-1267-477A-8AD3-E4972F3C8945} = {DC385C4F-63ED-4F3E-A6E9-662A03EB835D}
+		{0E8C0348-E61B-4209-9D2F-C57E87910675} = {DC385C4F-63ED-4F3E-A6E9-662A03EB835D}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B17EC4BB-C80A-4093-836D-04CBC83E0E73}
 	EndGlobalSection
 EndGlobal

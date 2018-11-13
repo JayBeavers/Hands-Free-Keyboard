@@ -1,4 +1,4 @@
-using Microsoft.HandsFree.Mouse;
+using Microsoft.HandsFree.GazePointer;
 using Microsoft.HandsFree.Settings;
 using System.Windows;
 using Microsoft.HandsFree.Keyboard.Settings;
@@ -18,7 +18,7 @@ namespace Microsoft.HandsFree.Keyboard
 
             Loaded += (s, e) =>
                 {
-                    GazeMouse.Attach(this, null, null, AppSettings.Instance.Mouse);
+                    GazePointer.GazePointer.Attach(this);
                 };
         }
         int GetGazeDelay(FrameworkElement element)

@@ -61,35 +61,7 @@
       <HintPath>..\..\..\packages\DeltaCompressionDotNet.1.1.0\lib\net20\DeltaCompressionDotNet.PatchApi.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="ICSharpCode.SharpZipLib, Version=0.86.0.518, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\squirrel.windows.1.5.2\lib\Net45\ICSharpCode.SharpZipLib.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="Microsoft.HandsFree.Filters, Version=0.0.0.0, Culture=neutral, processorArchitecture=AMD64">
-      <HintPath>..\..\..\packages\Microsoft.HandsFree.Mouse.1.0.4\lib\net461\Microsoft.HandsFree.Filters.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Microsoft.HandsFree.Mouse, Version=1.0.4.0, Culture=neutral, processorArchitecture=AMD64">
-      <HintPath>..\..\..\packages\Microsoft.HandsFree.Mouse.1.0.4\lib\net461\Microsoft.HandsFree.Mouse.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Microsoft.HandsFree.MVVM, Version=0.0.0.0, Culture=neutral, processorArchitecture=AMD64">
-      <HintPath>..\..\..\packages\Microsoft.HandsFree.Mouse.1.0.4\lib\net461\Microsoft.HandsFree.MVVM.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Microsoft.HandsFree.Sensors, Version=0.0.0.0, Culture=neutral, processorArchitecture=AMD64">
-      <HintPath>..\..\..\packages\Microsoft.HandsFree.Mouse.1.0.4\lib\net461\Microsoft.HandsFree.Sensors.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Microsoft.HandsFree.Settings, Version=0.0.0.0, Culture=neutral, processorArchitecture=AMD64">
-      <HintPath>..\..\..\packages\Microsoft.HandsFree.Mouse.1.0.4\lib\net461\Microsoft.HandsFree.Settings.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Microsoft.HandsFree.Win32, Version=0.0.0.0, Culture=neutral, processorArchitecture=AMD64">
-      <HintPath>..\..\..\packages\Microsoft.HandsFree.Mouse.1.0.4\lib\net461\Microsoft.HandsFree.Win32.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="Mono.Cecil, Version=0.9.6.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756, processorArchitecture=MSIL">
       <HintPath>..\..\..\packages\Mono.Cecil.0.9.6.4\lib\net45\Mono.Cecil.dll</HintPath>
       <Private>True</Private>
@@ -107,16 +79,17 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="NuGet.Squirrel, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\squirrel.windows.1.5.2\lib\Net45\NuGet.Squirrel.dll</HintPath>
-      <Private>True</Private>
+      <HintPath>..\..\..\packages\squirrel.windows.1.9.0\lib\Net45\NuGet.Squirrel.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpCompress, Version=0.17.1.0, Culture=neutral, PublicKeyToken=afb0a02973931d96, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\SharpCompress.0.17.1\lib\net45\SharpCompress.dll</HintPath>
     </Reference>
     <Reference Include="Splat, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\..\packages\Splat.2.0.0\lib\Net45\Splat.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Squirrel, Version=1.5.2.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\squirrel.windows.1.5.2\lib\Net45\Squirrel.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="Squirrel, Version=1.9.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\squirrel.windows.1.9.0\lib\Net45\Squirrel.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Device" />
@@ -216,23 +189,6 @@
     <Content Include="media\HandsFreeKeyboard.ico">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="msvcp110.dll">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="msvcr110.dll">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Tobii.EyeX.Client.dll">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Tobii.EyeX.Client.Net20.dll" />
-    <Content Include="Tobii.Gaze.Core.Net.dll" />
-    <Content Include="TobiiGazeCore64.dll">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="vccorlib110.dll">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
     <Resource Include="media\IconLoggingOff.png" />
     <Resource Include="media\IconLoggingOn.png" />
     <Content Include="Performance.xml">
@@ -240,6 +196,22 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\lib\GazePointer\lib\Microsoft.HandsFree.GazePointer\Microsoft.HandsFree.GazePointer.csproj">
+      <Project>{128a0a18-7fc1-4db5-bbec-2174c4c765eb}</Project>
+      <Name>Microsoft.HandsFree.GazePointer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\lib\GazePointer\lib\Microsoft.HandsFree.MVVM\Microsoft.HandsFree.MVVM.csproj">
+      <Project>{3d58b016-b156-4401-8785-4e0182655ede}</Project>
+      <Name>Microsoft.HandsFree.MVVM</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\lib\GazePointer\lib\Microsoft.HandsFree.Sensors\Microsoft.HandsFree.Sensors.csproj">
+      <Project>{48e96990-1267-477a-8ad3-e4972f3c8945}</Project>
+      <Name>Microsoft.HandsFree.Sensors</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\lib\GazePointer\lib\Microsoft.HandsFree.Settings\Microsoft.HandsFree.Settings.csproj">
+      <Project>{c738745b-1af0-4d65-bea7-082fb61864ec}</Project>
+      <Name>Microsoft.HandsFree.Settings</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\..\lib\Microsoft.HandsFree.Helpers\Microsoft.HandsFree.Helpers.csproj">
       <Project>{1a916246-705d-4192-b396-8165a96319ac}</Project>
       <Name>Microsoft.HandsFree.Helpers</Name>
